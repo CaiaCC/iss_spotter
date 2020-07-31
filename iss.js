@@ -115,7 +115,6 @@ const fetchCoordsByIP = function(IP, callback) {
 const fetchISSFlyOverTimes = function(coords, callback) {
   const LAT = coords.latitude;
   const LON = coords.longitude;
-
   request(`http://api.open-notify.org/iss-pass.json?lat=${LAT}&lon=${LON}`, function(error, response, body) {
     if (response.statusCode !== 200) {
       const msg = `Status Code ${response.statusCode} when fetching flyovertine for coordinates. Response: ${body}`;
@@ -131,5 +130,3 @@ const fetchISSFlyOverTimes = function(coords, callback) {
     return callback(null, data);
   });
 };*/
-
-

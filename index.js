@@ -13,7 +13,7 @@ const printTimes = (passtimes) => {
     const datetime = new Date(0);
 
     datetime.setUTCSeconds(time.risetime);
-    console.log(`Next pass at ${datetime} (Pacific Daylight Time) for ${time.duration} seconds!`);
+    console.log(`Next pass at ${datetime} (Pacific Daylight Time) for ${time.duration} seconds!`)
   };
 }
 /*
